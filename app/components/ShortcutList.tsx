@@ -79,8 +79,10 @@ export function ShortcutList({
               className="mt-px overflow-hidden first:mt-0 first:rounded-t last:rounded-b focus-within:relative focus-within:z-10 focus-within:ring-2 focus-within:ring-blue-500"
             >
               <Accordion.Header className="flex">
-                <Accordion.Trigger className="text-left group flex h-[45px] flex-1 cursor-pointer items-center justify-between bg-white px-5 text-[15px] leading-none text-gray-700 shadow-[0_1px_0_0_#e6e8eb] outline-none hover:bg-gray-100">
-                  {category}
+                <Accordion.Trigger className=" text-left group flex h-[45px] flex-1 cursor-pointer items-center justify-between bg-white px-5 text-[15px] leading-none text-gray-700 shadow-[0_1px_0_0_#e6e8eb] outline-none hover:bg-gray-100">
+                  <span className="font-bold" id="test">
+                    {category}
+                  </span>
                   <ChevronDownIcon
                     className="text-gray-500 ease-[cubic-bezier(0.87,_0,_0.13,_1)] transition-transform duration-300 group-data-[state=open]:rotate-180"
                     aria-hidden
@@ -97,7 +99,7 @@ export function ShortcutList({
                     >
                       <div className="flex justify-between items-start">
                         <div>
-                          <span className="font-medium text-gray-800">
+                          <span className="font-bold text-gray-800">
                             {shortcut.name}
                           </span>
                           <p className="text-sm text-gray-600">
